@@ -7,7 +7,7 @@ class Login extends StatefulWidget {
 
 class _LoginState extends State<Login> {
   String name="";
-  bool changebu  = false;
+  bool changebutton = false;
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -50,7 +50,7 @@ class _LoginState extends State<Login> {
                   InkWell(
                     onTap: ()  async {
                       setState((){
-                        changebu =true;
+                        changebutton =true;
                       });
                       await Future.delayed(Duration(seconds: 1));
                       Navigator.pushNamed(context, myroutes.homeroute);
@@ -58,9 +58,9 @@ class _LoginState extends State<Login> {
                     child: AnimatedContainer(
                       duration: Duration(seconds: 1),
                       height: 40,
-                      width: changebu?40:80,
+                      width: changebutton?40:80,
                       alignment: Alignment.center,
-                      child: changebu?Icon(
+                      child: changebutton?Icon(
                         Icons.done,
                         color: Colors.white ) : Text(
                         "Login",
