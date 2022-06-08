@@ -9,27 +9,27 @@ class Mydrawer  extends StatelessWidget {
         children: [
           DrawerHeader(
             decoration: BoxDecoration(color: Colors.blue),
-        padding: EdgeInsets.zero,
-        child: UserAccountsDrawerHeader(
-            decoration: BoxDecoration(color: Colors.black),
-          margin: EdgeInsets.zero,
-          accountName: Text("Utkarsh Singh"),
-          accountEmail: Text("us9766134gmail.com"),
-          currentAccountPicture: CircleAvatar(
-            backgroundImage: NetworkImage(imageUrl),
-          )
+            padding: EdgeInsets.zero,
+            child: UserAccountsDrawerHeader(
+                decoration: BoxDecoration(color: Colors.black),
+                margin: EdgeInsets.zero,
+                accountName: Text("Utkarsh Singh"),
+                accountEmail: Text("us9766134gmail.com"),
+                currentAccountPicture: CircleAvatar(
+                  backgroundImage: NetworkImage(imageUrl),
+                )
+            ),
           ),
-        ),
           ListTile(
             leading: Icon(
-            CupertinoIcons.home,color: Colors.red,
-          ),
+              CupertinoIcons.home,color: Colors.red,
+            ),
             title: Text(
               "Title",textScaleFactor: 1.2,
               style: TextStyle(
-                color: Colors.black),
-              ),
+                  color: Colors.black),
             ),
+          ),
           ListTile(
             leading: Icon(
               CupertinoIcons.profile_circled,color: Colors.red,

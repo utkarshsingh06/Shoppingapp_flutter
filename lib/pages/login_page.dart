@@ -32,7 +32,7 @@ class _LoginState extends State<Login> {
           key: _formKey,
           child: Column(
             children: [
-              Image.asset("assets/undraw_hey_email_liaa.png", fit: BoxFit.fill,
+              Image.asset("assets/images/undraw_hey_email_liaa.png", fit: BoxFit.fill,
                 height: 400,
               ),
               Text("WELCOME $name", style: TextStyle(
