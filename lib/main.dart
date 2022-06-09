@@ -23,7 +23,7 @@ class Myapp extends StatelessWidget {
           textTheme: Theme.of(context).textTheme,
     )),
       debugShowCheckedModeBanner: false,
-      initialRoute: "/home",
+      initialRoute: "/login",
       routes: {
         myroutes.homeroute :(context) => Homepage(),
         myroutes.loginroute :(context) => Login(),
