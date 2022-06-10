@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/utils/routes.dart';
+import "package:velocity_x/velocity_x.dart";
 class Login extends StatefulWidget {
   @override
   State<Login> createState() => _LoginState();
@@ -22,11 +23,10 @@ class _LoginState extends State<Login> {
       });
     }
   }
-
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: Colors.white,
+      color: context.canvasColor,
       child: SingleChildScrollView(
         child: Form(
           key: _formKey,
@@ -69,7 +69,7 @@ class _LoginState extends State<Login> {
                       height: 50.0,
                     ),
                     Material(
-                      color: Colors.deepPurple,
+                      color: context.theme.buttonColor,
                       borderRadius: BorderRadius.circular(8),
                       child: InkWell(
                         splashColor: Colors.red,
