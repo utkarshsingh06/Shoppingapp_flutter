@@ -17,7 +17,7 @@ class _LoginState extends State<Login> {
         changebutton = true;
       });
       await Future.delayed(Duration(seconds: 1));
-      await Navigator.pushNamed(context, myroutes.homeroute);
+      await Navigator.pushNamed(context, myroutes.registerRoute);
       setState(() {
         changebutton = false;
       });
@@ -74,24 +74,24 @@ class _LoginState extends State<Login> {
                       child: InkWell(
                         splashColor: Colors.red,
                         onTap: () => moveToHome(context),
-                        child: AnimatedContainer(
-                          duration: Duration(seconds: 1),
-                          height: 40,
-                          width: changebutton ? 40 : 80,
-                          alignment: Alignment.center,
-                          child: changebutton ? Icon(
-                              Icons.done,
-                              color: Colors.white) : Text(
-                            "Login",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 18,
+                        child:AnimatedContainer(
+                            duration: Duration(seconds: 1),
+                            height: 40,
+                            width: changebutton ? 40 : 80,
+                            alignment: Alignment.center,
+                            child: changebutton ? Icon(
+                                Icons.done,
+                                color: Colors.white) : Text(
+                              "Login",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18,
+                              ),
                             ),
                           ),
                         ),
                       ),
-                    )
                   ],
                 ),
               ),
