@@ -3,7 +3,7 @@ import 'package:myapp/pages/home_detail_page.dart';
 import 'package:myapp/widgets/homewidgets/catalog_image.dart';
 import 'package:velocity_x/velocity_x.dart';
 import '../../models/catalogs.dart';
-import 'package:myapp/widgets/homewidgets/addtocart.dart';
+import 'package:myapp/widgets/homewidgets/addtocar.dart';
 class CatalogList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
